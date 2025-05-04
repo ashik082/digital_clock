@@ -66,6 +66,28 @@ body {
     font-family: "Orbitron", monospace;
 }
 
+.date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    font-family: "Orbitron", monospace;
+    color: white;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.date .separator {
+    margin: 0 0.1rem;
+}
+
+@media (max-width: 768px) {
+    .date {
+        font-size: 1rem;
+        gap: 0.1rem;
+    }
+}
+
 .invisible {
     visibility: hidden;
 }
