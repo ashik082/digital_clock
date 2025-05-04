@@ -29,9 +29,12 @@ function update() {
     min.textContent = String(m).padStart(2, '0');
     sec.textContent = String(s).padStart(2, '0');
     ampm.textContent = am_pm;
+    const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    const todayName = days[now.getDay()];
 
-    Array.from(week.children).forEach(ele => ele.classList.remove('active'));
-    week.children[now.getDay()].classList.add('active');
+    Array.from(week.children).forEach(dayEl => {
+        dayEl.classList.toggle('active', dayEl.textContent === todayName);
+    });
 }
 
 setInterval(update, 500);
