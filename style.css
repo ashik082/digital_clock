@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.week {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.5rem;
+    color: #2d2d2d;
+    font-weight: bold;
+    font-family: 'Orbitron', monospace;
+    width: auto;
+}
+
+.week .active {
+    color: rgb(255, 255, 255);
+}
+
+.digital-clock {
+    background-color: black;
+    color: #fff;
+    display: flex;
+    border-radius: 2rem;
+    user-select: none;
+    padding: 0 2rem;
+    border: 0.5rem solid #2d2d2d;
+}
+
+.time {
+    font-family: "Orbitron", monospace;
+    letter-spacing: 0.1rem;
+}
+
+.hour,
+.min,
+.sec,
+.dot {
+    display: inline-block;
+    font-size: 13rem;
+}
+
+.ampm {
+    display: inline-block;
+    font-size: 4rem;
+    margin-left: 1rem;
+    align-self: flex-end;
+    font-family: "Orbitron", monospace;
+}
+
+.invisible {
+    visibility: hidden;
+}
