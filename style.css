@@ -3,6 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: 'Technology';
+    src: url('fonts/Technology-Bold.woff2') format('woff2'),
+         url('fonts/Technology-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 html,
 body {
@@ -33,12 +42,13 @@ body {
 
 .week .active {
     color: rgb(255, 255, 255);
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.7); 
+
 }
+
 .week .active:nth-child(7) {
     color: #ff4d4d;
-    text-shadow: 0 0 5px rgba(255, 77, 77, 0.7); 
-  }
+
+}
 
 .digital-clock {
     background-color: black;
@@ -51,7 +61,7 @@ body {
 }
 
 .time {
-    font-family: "Orbitron", monospace;
+font-family: 'Technology', monospace;
     letter-spacing: 0.1vw;
 }
 
@@ -60,7 +70,7 @@ body {
 .sec,
 .dot {
     display: inline-block;
-    font-size: 13vw;
+    font-size: 25vw;
 }
 
 .ampm {
@@ -68,7 +78,7 @@ body {
     font-size: 4vw;
     margin-left: 1vw;
     align-self: flex-end;
-    font-family: "Orbitron", monospace;
+    font-family: 'Orbitron', monospace;
 }
 
 .date {
@@ -76,10 +86,10 @@ body {
     justify-content: center;
     align-items: center;
     gap: 0.2rem;
-    font-family: "Orbitron", monospace;
+    font-family: 'Technology', monospace;
     color: white;
     margin-bottom: 0.5rem;
-    font-size: 1.2rem;
+    font-size: 3rem;
 }
 
 .date .separator {

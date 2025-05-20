@@ -35,12 +35,10 @@ function update() {
     day.textContent = String(now.getDate()).padStart(2, '0');
     month.textContent = String(now.getMonth() + 1).padStart(2, '0');
     year.textContent = now.getFullYear();
-    const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    const days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
     const todayName = days[now.getDay()];
-
     Array.from(week.children).forEach(dayEl => {
         dayEl.classList.toggle('active', dayEl.textContent === todayName);
     });
 }
-
 setInterval(update, 500);
